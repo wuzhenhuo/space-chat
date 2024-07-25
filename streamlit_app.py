@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 coloredlogs.install(level=config('LOG_LEVEL', 'INFO'), logger=logger)
 
 
-GROQ_MODEL = 'mixtral-8x7b-32768'
+GROQ_MODEL = 'llama-3.1-70b-Versatile'
 TIMEOUT = 120
 groq_client = Groq(
     api_key=config('GROQ_API_KEY'),
